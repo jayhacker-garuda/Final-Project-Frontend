@@ -1,0 +1,318 @@
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #25cbb89e;
+    overflow: hidden;
+    z-index: -10;
+}
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 11s linear infinite;
+}
+
+
+
+
+.background li:nth-child(0) {
+    left: 76%;
+    width: 158px;
+    height: 158px;
+    bottom: -158px;
+    animation-delay: 1s;
+}
+.background li:nth-child(1) {
+    left: 62%;
+    width: 112px;
+    height: 112px;
+    bottom: -112px;
+    animation-delay: 2s;
+}
+.background li:nth-child(2) {
+    left: 70%;
+    width: 140px;
+    height: 140px;
+    bottom: -140px;
+    animation-delay: 3s;
+}
+.background li:nth-child(3) {
+    left: 21%;
+    width: 111px;
+    height: 111px;
+    bottom: -111px;
+    animation-delay: 15s;
+}
+.background li:nth-child(4) {
+    left: 7%;
+    width: 131px;
+    height: 131px;
+    bottom: -131px;
+    animation-delay: 13s;
+}
+.background li:nth-child(5) {
+    left: 17%;
+    width: 193px;
+    height: 193px;
+    bottom: -193px;
+    animation-delay: 18s;
+}
+.background li:nth-child(6) {
+    left: 81%;
+    width: 157px;
+    height: 157px;
+    bottom: -157px;
+    animation-delay: 8s;
+}
+.background li:nth-child(7) {
+    left: 3%;
+    width: 124px;
+    height: 124px;
+    bottom: -124px;
+    animation-delay: 18s;
+}
+.background li:nth-child(8) {
+    left: 55%;
+    width: 120px;
+    height: 120px;
+    bottom: -120px;
+    animation-delay: 20s;
+}
+.background li:nth-child(9) {
+    left: 48%;
+    width: 190px;
+    height: 190px;
+    bottom: -190px;
+    animation-delay: 34s;
+}
+.background li:nth-child(10) {
+    left: 52%;
+    width: 128px;
+    height: 128px;
+    bottom: -128px;
+    animation-delay: 47s;
+}
+.background li:nth-child(11) {
+    left: 79%;
+    width: 158px;
+    height: 158px;
+    bottom: -158px;
+    animation-delay: 4s;
+}
+.background li:nth-child(12) {
+    left: 16%;
+    width: 145px;
+    height: 145px;
+    bottom: -145px;
+    animation-delay: 13s;
+}
+.background li:nth-child(13) {
+    left: 85%;
+    width: 165px;
+    height: 165px;
+    bottom: -165px;
+    animation-delay: 22s;
+}
+.background li:nth-child(14) {
+    left: 58%;
+    width: 119px;
+    height: 119px;
+    bottom: -119px;
+    animation-delay: 27s;
+}
+.background li:nth-child(15) {
+    left: 70%;
+    width: 195px;
+    height: 195px;
+    bottom: -195px;
+    animation-delay: 62s;
+}
+.background li:nth-child(16) {
+    left: 75%;
+    width: 128px;
+    height: 128px;
+    bottom: -128px;
+    animation-delay: 62s;
+}
+.background li:nth-child(17) {
+    left: 31%;
+    width: 168px;
+    height: 168px;
+    bottom: -168px;
+    animation-delay: 35s;
+}
+.background li:nth-child(18) {
+    left: 10%;
+    width: 175px;
+    height: 175px;
+    bottom: -175px;
+    animation-delay: 86s;
+}
+.background li:nth-child(19) {
+    left: 28%;
+    width: 191px;
+    height: 191px;
+    bottom: -191px;
+    animation-delay: 62s;
+}
+.background li:nth-child(20) {
+    left: 29%;
+    width: 185px;
+    height: 185px;
+    bottom: -185px;
+    animation-delay: 64s;
+}
+.background li:nth-child(21) {
+    left: 18%;
+    width: 147px;
+    height: 147px;
+    bottom: -147px;
+    animation-delay: 95s;
+}
+.background li:nth-child(22) {
+    left: 13%;
+    width: 119px;
+    height: 119px;
+    bottom: -119px;
+    animation-delay: 80s;
+}
+.background li:nth-child(23) {
+    left: 87%;
+    width: 146px;
+    height: 146px;
+    bottom: -146px;
+    animation-delay: 42s;
+}
+.background li:nth-child(24) {
+    left: 57%;
+    width: 178px;
+    height: 178px;
+    bottom: -178px;
+    animation-delay: 6s;
+}
+.background li:nth-child(25) {
+    left: 58%;
+    width: 174px;
+    height: 174px;
+    bottom: -174px;
+    animation-delay: 106s;
+}
+.background li:nth-child(26) {
+    left: 41%;
+    width: 186px;
+    height: 186px;
+    bottom: -186px;
+    animation-delay: 46s;
+}
+.background li:nth-child(27) {
+    left: 66%;
+    width: 165px;
+    height: 165px;
+    bottom: -165px;
+    animation-delay: 47s;
+}
+.background li:nth-child(28) {
+    left: 44%;
+    width: 145px;
+    height: 145px;
+    bottom: -145px;
+    animation-delay: 133s;
+}
+.background li:nth-child(29) {
+    left: 63%;
+    width: 163px;
+    height: 163px;
+    bottom: -163px;
+    animation-delay: 128s;
+}
+.background li:nth-child(30) {
+    left: 84%;
+    width: 193px;
+    height: 193px;
+    bottom: -193px;
+    animation-delay: 93s;
+}
+.background li:nth-child(31) {
+    left: 62%;
+    width: 139px;
+    height: 139px;
+    bottom: -139px;
+    animation-delay: 140s;
+}
+.background li:nth-child(32) {
+    left: 52%;
+    width: 184px;
+    height: 184px;
+    bottom: -184px;
+    animation-delay: 39s;
+}
+.background li:nth-child(33) {
+    left: 41%;
+    width: 194px;
+    height: 194px;
+    bottom: -194px;
+    animation-delay: 68s;
+}
+.background li:nth-child(34) {
+    left: 12%;
+    width: 199px;
+    height: 199px;
+    bottom: -199px;
+    animation-delay: 134s;
+}
+.background li:nth-child(35) {
+    left: 32%;
+    width: 111px;
+    height: 111px;
+    bottom: -111px;
+    animation-delay: 79s;
+}
+.background li:nth-child(36) {
+    left: 8%;
+    width: 141px;
+    height: 141px;
+    bottom: -141px;
+    animation-delay: 46s;
+}
+.background li:nth-child(37) {
+    left: 52%;
+    width: 170px;
+    height: 170px;
+    bottom: -170px;
+    animation-delay: 137s;
+}
+.background li:nth-child(38) {
+    left: 8%;
+    width: 169px;
+    height: 169px;
+    bottom: -169px;
+    animation-delay: 52s;
+}
+.background li:nth-child(39) {
+    left: 10%;
+    width: 177px;
+    height: 177px;
+    bottom: -177px;
+    animation-delay: 124s;
+}

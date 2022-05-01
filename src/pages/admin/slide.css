@@ -1,0 +1,35 @@
+
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-100%);
+    opacity: 0.25;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes slide-left {
+  from {
+    transform: translateX(100%);
+    opacity: 0.25;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.animate_seo {
+    animation: slide-left 1000ms;
+    animation-delay: 200ms;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+}
+.animate_post {
+    animation: slide-right 1000ms;
+    animation-delay: 200ms;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+}
