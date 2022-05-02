@@ -9,8 +9,7 @@ function Hero() {
                         Journey With The Jackson's
                     </h1>
                     <p className="">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et sunt sapiente in nam accusantium nulla incidunt vitae necessitatibus, distinctio labore sint ipsa quod vero temporibus quae officiis? Recusandae, odit.
-                    </p>
+                        “Do not follow where the path may lead. Go instead where there is no path and leave a trail” – Ralph Waldo Emerson                    </p>
                     <button className="bg-teal-600 mx-auto px-4 py-1 rounded-md text-white">Join The Journey</button>
                 </div>
             </div>

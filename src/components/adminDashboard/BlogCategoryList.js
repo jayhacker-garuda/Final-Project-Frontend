@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
-function BlogCategoryList({categories = [], deleteCategory}) {
+function BlogCategoryList({categories, deleteCategory}) {
     return (
         <div>
             <div className="-mx-4 mt-10 ring-1 ring-gray-300 md:mx-auto md:rounded-lg container bg-white mb-4">

@@ -28,13 +28,14 @@ import { isAdmin, isAnon } from '../utils';
 import { Navigate, useNavigate } from 'react-router-dom';
 
 
-axios.defaults.baseURL = 'http://10.47.12.3:8000';
+axios.defaults.baseURL = 'http://10.47.12.3:8080';
 // axios.defaults.baseURL = 'http://10.44.16.9:8000';
 // axios.defaults.baseURL = 'http://127.0.0.1:8000';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 axios.defaults.headers.post['Accept'] = 'application/json';
 
-axios.defaults.withCredentials = true;
+axios.defaults.withCredentials = false;
+axios.defaults.headers['Access-Control-Allow-Origin'] = '*';
 
 const token = localStorage.getItem('token');
 const user = localStorage.getItem('user');
@@ -281,7 +282,7 @@ const AppProvider = ({ children }) => {
                     })
             })
         } catch (error) {
-            console.log(error)
+            // console.log(error)
         }
     }
 
@@ -330,6 +331,7 @@ const AppProvider = ({ children }) => {
 
     const getBlogPost = async ({ category }) => {
         dispatch({ type: ALL_POST_BEGIN })
+        console.log(category);
         const config = {
             method: 'get',
             url: category.has('category') ? `/api/all-blog-post/?${category}` : '/api/all-blog-post',

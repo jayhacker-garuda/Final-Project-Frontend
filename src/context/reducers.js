@@ -81,8 +81,6 @@ const reducer = (state, action) => {
     if (action.type === LOGOUT_USER_SUCCESS) {
         return {
             ...state,
-            user: null,
-            token: null
         }
     }
 

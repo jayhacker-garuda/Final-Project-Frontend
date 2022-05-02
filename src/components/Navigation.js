@@ -4,6 +4,7 @@ import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 
 import { NavLink } from "react-router-dom";
 import { isAnon } from '../utils';
+import { useAppContext } from '../context/appContext';
 
 
 const navigation = [
@@ -20,6 +21,7 @@ function classNames(...classes) {
 
 function Navigation({ user }) {
 
+    const { logoutUser } = useAppContext();
     const loggedIn = !isAnon(user);
     console.log(loggedIn);
     return (
@@ -145,8 +147,9 @@ function Navigation({ user }) {
                                             </Menu.Item>
                                             <Menu.Item>
                                                 {({ active }) => (
-                                                    <NavLink
-                                                        to="/logout"
+                                                        <NavLink
+                                                            onClick={async() => await logoutUser()}
+                                                        to="#"
                                                         className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                                                     >
                                                         Sign out

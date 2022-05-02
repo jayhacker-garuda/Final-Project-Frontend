@@ -25,7 +25,7 @@ import Navigation from "./components/Navigation";
 import SideBar from "./components/adminDashboard/SideBar";
 import Footer from "./components/Footer";
 import Home from './pages/Home';
-import LogOut from "./pages/LogOut";
+// import LogOut from "./pages/LogOut";
 import NoPage from "./pages/NoPage";
 import Journey from './pages/Journey';
 import ContactUs from './pages/ContactUs';
@@ -144,7 +144,7 @@ function App() {
         <Route path="/edit-blog-category/:id/:name" element={<AdminPrivateRoute>{renderComponent(EditBlogCategory)}</AdminPrivateRoute>} />
         <Route path="/view-blog-category" element={<AdminPrivateRoute>{renderComponent(CreateBlogCategory)}</AdminPrivateRoute>} />
         <Route path="/contact-us" element={renderComponent(ContactUs)} />
-        <Route path="/logout" element={renderComponent(LogOut)} />
+        {/* <Route path="/logout" element={renderComponent(LogOut)} /> */}
         <Route path="*" element={renderComponent(NoPage)} />
         {/* <Route path="/journey/*" element={renderComponent(NoPage)} /> */}
       </Routes>

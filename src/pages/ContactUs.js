@@ -1,5 +1,6 @@
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 import React from 'react'
+import Social from '../components/Social'
 
 
 const offices = [
@@ -16,19 +17,16 @@ function ContactUs() {
       <div className="bg-warm-gray-50">
         <div className="py-24 lg:py-32">
           <div className="relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8">
-            <h1 className="text-4xl font-extrabold tracking-tight text-warm-gray-900 sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-extrabold tracking-tight text-teal-100 opacity-50 sm:text-5xl lg:text-6xl">
               Get in touch
             </h1>
-            <p className="mt-6 text-xl text-warm-gray-500 max-w-3xl">
-              Vel nunc non ut montes, viverra tempor. Proin lectus nibh phasellus morbi non morbi. In elementum urna
-              ut volutpat. Sagittis et vel et fermentum amet consequat.
-            </p>
+            
           </div>
         </div>
       </div>
 
       {/* Contact section */}
-      <section className="relative bg-white" aria-labelledby="contact-heading">
+      <section className="relative bg-white mb-10" aria-labelledby="contact-heading">
         <div className="absolute w-full h-1/2 bg-warm-gray-50" aria-hidden="true" />
         {/* Decorative dot pattern */}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -162,10 +160,7 @@ function ContactUs() {
                   </svg>
                 </div>
                 <h3 className="text-lg font-medium text-white">Contact information</h3>
-                <p className="mt-6 text-base text-teal-50 max-w-3xl">
-                  Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor
-                  lacus arcu.
-                </p>
+                
                 <dl className="mt-8 space-y-6">
                   <dt>
                     <span className="sr-only">Phone number</span>
@@ -332,32 +327,9 @@ function ContactUs() {
         </div>
       </section>
 
-      {/* Contact grid */}
-      <section aria-labelledby="offices-heading">
-        <div className="max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-          <h2 id="offices-heading" className="text-3xl font-extrabold text-warm-gray-900">
-            Our offices
-          </h2>
-          <p className="mt-6 text-lg text-warm-gray-500 max-w-3xl">
-            Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus
-            dui laoreet diam sed lacus, fames.
-          </p>
-          <div className="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-            {offices.map((office) => (
-              <div key={office.id}>
-                <h3 className="text-lg font-medium text-warm-gray-900">{office.city}</h3>
-                <p className="mt-2 text-base text-warm-gray-500">
-                  {office.address.map((line) => (
-                    <span key={line} className="block">
-                      {line}
-                    </span>
-                  ))}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Social */}
+      <Social />
+
     </main>
   )
 }

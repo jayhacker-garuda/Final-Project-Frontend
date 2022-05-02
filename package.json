@@ -2,6 +2,7 @@
   "name": "journey-with-the-jackson",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://10.47.12.3:8000",
   "dependencies": {
     "@headlessui/react": "^1.6.0",
     "@heroicons/react": "^1.0.6",

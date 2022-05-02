@@ -17,10 +17,7 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-// const useForceRerendering = () => {
-//     const [counter, setCounter] = React.useState(0);
-//     return () => setCounter(counter => counter + 1);
-// };
+
 
 function CreateBlogCategory() {
     // const [categories, setCategories] = useState([]);
@@ -28,13 +25,10 @@ function CreateBlogCategory() {
     const { control, handleSubmit } = useForm({
         defaultValues: {
             name: '',
-            // email: '',
-            // password: '',
-            // confirmPassword: '',
+            
         }
     });
 
-    // const forceRerendering = useForceRerendering();
 
     function reload() {
         window.location.reload();
@@ -45,7 +39,6 @@ function CreateBlogCategory() {
         await addBlogCategory(data)
         setInterval(() => {reload()},2000)
         
-        // forceRerendering();
     }
 
     const deleteCategory = async (id) => {
